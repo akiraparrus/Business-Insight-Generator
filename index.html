@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Insight Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="parallax" id="parallax1">
+        <div class="content">
+            <h1>Business Insight Generator</h1>
+            <div class="form-group">
+                <label for="industry">Select Industry:</label>
+                <select id="industry" onchange="updateChallenges()">
+                    <option value="healthcare">Healthcare</option>
+                    <option value="banking">Banking</option>
+                    <option value="retail">Retail</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="challenge">Select Business Challenge:</label>
+                <select id="challenge">
+                    <!-- Options will be populated dynamically based on selected industry -->
+                </select>
+            </div>
+            <button id="generate-btn">Generate Insight</button>
+            <div id="insight" class="insight"></div>
+        </div>
+    </div>
+    <div class="parallax" id="parallax2">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Our mission is to provide actionable business insights that help companies overcome their challenges and seize new opportunities.</p>
+            <p>We leverage the latest in technology and data analysis to deliver tailored solutions that drive growth and efficiency.</p>
+            <p>With years of experience in various sectors, our team is dedicated to helping you achieve your business goals.</p>
+            <p>Whether you are in healthcare, banking, retail, or any other industry, we have the expertise to guide you towards success.</p>
+        </div>
+    </div>
+    <div class="parallax" id="parallax3">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <p>Get in touch to learn more about what we do.</p>
+            <p>Email: info@businessinsights.com</p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <p>Address: 123 Business Road, Suite 100, Business City, BC 12345</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
